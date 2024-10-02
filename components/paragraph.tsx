@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ParagraphProps {
   displayBtn: boolean;
-  buttonURL?: string; // Fixed the typo here
+  buttonURL?: string;
   number: string;
   head: string;
   para: string;
   imagesrc?: string;
-  altText?: string; // Added alt text prop
+  altText?: string;
 }
 
 const Paragraph: React.FC<ParagraphProps> = (props) => {
@@ -17,17 +18,16 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
 
   const DisplayLink = () => {
     if (displayBtn && buttonURL) {
-      // Check if buttonURL is defined
       return (
-        <a
+        <Link
           href={buttonURL}
           className="hover:scale-[1.05] duration-300 w-[160px] md:ml-4 h-auto px-4 py-2 text-base text-center bg-[#ff8d23] text-[#fff5ee] mt-4 rounded-md"
         >
           Илүү ихийг харах
-        </a>
+        </Link>
       );
     }
-    return null; // Explicitly return null if not displaying the button
+    return null;
   };
 
   return (
@@ -54,5 +54,4 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
     </article>
   );
 };
-
-export default Paragraph;
+export default Paragraph

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
-import WhiteLogo from "/assets/logo-yellow transparent.png";
+import YellowLogo from "/assets/logo-yellow transparent.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +35,11 @@ export default function Navbar() {
             <div className="flex items-center">
               <Link href="/" className="flex items-center gap-1">
                 <Image
-                  src={WhiteLogo}
+                  src={YellowLogo}
                   alt="Logo"
-                  width={40}
-                  height={40}
-                  className="lg:w-[60px] lg:h-[60px]"
+                  width={60}
+                  height={60}
+                  className="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] sm:w-[40px] sm:h-[40px]"
                 />
                 <h1 className="text-center font-bold text-[14px] lg:text-[18px]">
                   Young Engineers <br /> Mongolia
@@ -124,7 +124,7 @@ export default function Navbar() {
                   className="flex items-center gap-1"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Image src={WhiteLogo} alt="Logo" width={40} height={40} />
+                  <Image src={YellowLogo} alt="Logo" width={40} height={40} />
                   <h1 className="text-center font-bold text-[14px]">
                     Young Engineers <br /> Mongolia
                   </h1>

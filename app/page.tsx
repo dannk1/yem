@@ -17,12 +17,14 @@ export default function HomePage() {
       head: "Төслүүд",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris massa, iaculis eget ligula non, mattis hendrerit urna. Curabitur id ante tristique, rutrum odio et, lacinia odio. Vivamus arcu dolor, gravida non tellus quis, blandit lobortis libero. Pellentesque a convallis ex. Cras ac mi at nibh commodo auctor a eget erat. Morbi a ipsum nibh. Sed ullamcorper turpis lectus, sed posuere nisi ultricies eu. Integer rutrum nulla vitae nunc egestas, fringilla fermentum sem rutrum.",
       btnDisplay: true,
+      buttonURL: "/Projects",
     },
     {
       number: "03",
       head: "Блог",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris massa, iaculis eget ligula non, mattis hendrerit urna. Curabitur id ante tristique, rutrum odio et, lacinia odio. Vivamus arcu dolor, gravida non tellus quis, blandit lobortis libero. Pellentesque a convallis ex. Cras ac mi at nibh commodo auctor a eget erat. Morbi a ipsum nibh. Sed ullamcorper turpis lectus, sed posuere nisi ultricies eu. Integer rutrum nulla vitae nunc egestas, fringilla fermentum sem rutrum.",
       btnDisplay: true,
+      buttonURL: "/Blogs",
     },
   ];
 
@@ -71,6 +73,7 @@ export default function HomePage() {
             head={context.head}
             para={context.para}
             displayBtn={context.btnDisplay}
+            buttonURL={context.btnDisplay ? context.buttonURL : undefined}
           />
         ))}
       </article>

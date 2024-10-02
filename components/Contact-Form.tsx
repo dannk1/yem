@@ -1,47 +1,50 @@
-'use client'
+"use client";
 
-import React, { useState } from "react"
-import emailjs from "emailjs-com"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  })
-  const [status, setStatus] = useState<string | null>(null)
+  });
+  const [status, setStatus] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    // Send email using EmailJS
-    emailjs.send(
-      "service_rii5rwg",
-      "template_c2av3kw",
-      formData,
-      "VcV60dG40jUbvlqdC"
-    ).then(
-      () => { // Using an arrow function here to ignore the response parameter
-        setStatus("Message sent successfully!")
-        setFormData({ name: "", email: "", message: "" })
-      },
-      (error) => {
-        setStatus("Failed to send the message. Please try again.")
-        console.error("EmailJS error:", error)
-      }
-    )
-  }
+    emailjs
+      .send(
+        "service_rii5rwg",
+        "template_c2av3kw",
+        formData,
+        "VcV60dG40jUbvlqdC"
+      )
+      .then(
+        () => {
+          setStatus("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          setStatus("Failed to send the message. Please try again.");
+          console.error("EmailJS error:", error);
+        }
+      );
+  };
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-xl">
@@ -81,5 +84,5 @@ export default function ContactForm() {
         {status && <p className="mt-4">{status}</p>}
       </div>
     </form>
-  )
+  );
 }
