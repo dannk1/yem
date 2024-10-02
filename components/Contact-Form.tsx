@@ -25,13 +25,14 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+    // Send email using EmailJS
     emailjs.send(
       "service_rii5rwg",
       "template_c2av3kw",
       formData,
       "VcV60dG40jUbvlqdC"
     ).then(
-      (response) => {
+      () => { // Using an arrow function here to ignore the response parameter
         setStatus("Message sent successfully!")
         setFormData({ name: "", email: "", message: "" })
       },
