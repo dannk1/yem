@@ -60,6 +60,7 @@ const LandingPage = () => {
         {paragraphContexts.map((context) => {
           return (
             <Paragraph
+              key={context.number}
               number={context.number}
               head={context.head}
               para={context.para}

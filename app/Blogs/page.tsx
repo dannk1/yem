@@ -6,7 +6,7 @@ const BlogsMain = () => {
       <section className="w-full pt-32 flex flex-col items-center gap-12"> 
         <div className="w-[80%] flex flex-col justify-center"> 
           <h3 className="text-[#ff8d23] text-2xl font-semibold"> 
-            "Young engineers Mongolia" 
+            &quot;Young engineers Mongolia&quot;
           </h3> 
           <h1 className="text-4xl font-bold mt-5 mb-3 text-slate-700">9E for the Future</h1> 
           <p className="text-md text-slate-700 leading-4"> 

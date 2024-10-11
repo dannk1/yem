@@ -3,13 +3,13 @@ const Charity = () => {
     <section className="w-full flex flex-col items-center justify-center text-white">
       <div className="w-[80%] mt-32 ">
         <h1 className="text-[#ff8d23] text-2xl font-semibold">
-          "Fund us for better future"
+          &quot;Fund us for better future&quot;
         </h1>
         <h3 className="mt-3 text-xl text-slate-700 leading-4\5 font-medium">
-          “Young Engineers Mongolia” байгууллага нь залуучуудын удирдсан
+          &quot;Young Engineers Mongolia&quot; байгууллага нь залуучуудын удирдсан
           байгууллага бөгөөд бид ирээдүйн Монголын инженерийн ажлын хүчийг
           нэмэгдүүлэх алсын хараатайгаар тууштай, хүчин төгс ажиллаж байна.
-          Билний ажлын урсгалыг нэмэгдүүлж, юм хийе гэсэн залуучуудаа дэмжих
+          Бидний ажлын урсгалыг нэмэгдүүлж, юм хийе гэсэн залуучуудаа дэмжих
           хүсэлтэй байвал доор дансаар бидэнд хандив өргөөрэй.
         </h3>
       </div>
