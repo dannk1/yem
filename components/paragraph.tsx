@@ -37,7 +37,7 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
           <h1 className="w-[130px] text-[126px] opacity-35 align-text-top leading-[140px]">
             {number}
           </h1>
-          <h3 className="w-auto h-auto text-[32px] bottom-4 absolute font-bold text-[#01093a]">
+          <h3 className="w-auto h-auto text-[32px] bottom-4 absolute font-bold">
             {head}
           </h3>
         </div>

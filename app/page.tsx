@@ -1,82 +1,75 @@
-import React from "react";
 import Paragraph from "@/components/paragraph";
+import Logo from "/assets/logo-yellow transparent.png";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import WhiteLogo from "/assets/logo-white transparent.png";
-import BackgroundPic from "/assets/bg_resized.png";
-
-export default function HomePage() {
+const LandingPage = () => {
   const paragraphContexts = [
     {
       number: "01",
       head: "ҮЕМ гэж юу вэ?",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris massa, iaculis eget ligula non, mattis hendrerit urna. Curabitur id ante tristique, rutrum odio et, lacinia odio. Vivamus arcu dolor, gravida non tellus quis, blandit lobortis libero. Pellentesque a convallis ex. Cras ac mi at nibh commodo auctor a eget erat. Morbi a ipsum nibh. Sed ullamcorper turpis lectus, sed posuere nisi ultricies eu. Integer rutrum nulla vitae nunc egestas, fringilla fermentum sem rutrum.",
+      para: "“Young Engineers Mongolia” байгууллага нь 2024 онд байгуулагдсан, төрийн бус залуучуудын байгууллага юм. Манай байгууллагын гол тэмдэгт нь “9E” буюу 9 инженерчлэлийн салбарыг залуучуудад онцлон, мэдлэг олгох төрөл бүрийн сувгуудыг бүтээх төслүүд хэрэгжүүлдэг.",
       btnDisplay: false,
     },
     {
       number: "02",
       head: "Төслүүд",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris massa, iaculis eget ligula non, mattis hendrerit urna. Curabitur id ante tristique, rutrum odio et, lacinia odio. Vivamus arcu dolor, gravida non tellus quis, blandit lobortis libero. Pellentesque a convallis ex. Cras ac mi at nibh commodo auctor a eget erat. Morbi a ipsum nibh. Sed ullamcorper turpis lectus, sed posuere nisi ultricies eu. Integer rutrum nulla vitae nunc egestas, fringilla fermentum sem rutrum.",
+      para: "“YEM” байгууллагын алсын хараа нь ирээдүйн Монголын инженерчлэл, шинжлэх ухаан, технологийн ажлын хүчийг нэмэгдүүлэх юм. Энэхүү зорилгын хүрээнд бид үйл ажиллагаагаа залуучууд руу чиглүүлж, тэдэнд зориулсан 9 инженерчлэлийн төрлөөр өдөрлөг, сургалт, хөтөлбөр, блогуудыг бүтээдэг.",
       btnDisplay: true,
-      buttonURL: "/Projects",
     },
     {
       number: "03",
       head: "Блог",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris massa, iaculis eget ligula non, mattis hendrerit urna. Curabitur id ante tristique, rutrum odio et, lacinia odio. Vivamus arcu dolor, gravida non tellus quis, blandit lobortis libero. Pellentesque a convallis ex. Cras ac mi at nibh commodo auctor a eget erat. Morbi a ipsum nibh. Sed ullamcorper turpis lectus, sed posuere nisi ultricies eu. Integer rutrum nulla vitae nunc egestas, fringilla fermentum sem rutrum.",
+      para: "Судалгааны хэлтэс нь 9E-ээр 9 сэдвүүдийн дор нийт 81 блог бичсэн бөгөөд цахим хуудсанд эдгээр блогуудын мэдээллийг товчилсон ба хүмүүсийн нүдэнд туссан байдлаар блог постер болгон оруулсан. 10 сард дадлагажигч нар 9 мэргэжил бүрийн хүмүүстэй ярилцлага хийж тэд хэрхэн ажилладаг болон инженер болсон намтрыг нь хүмүүст сонирхуулсан блогуудыг бичсэн.",
       btnDisplay: true,
-      buttonURL: "/Blogs",
     },
   ];
 
   return (
-    <main className=" flex flex-col items-center text-black">
-      <header className="text-center lg:mt-[0rem] mt-[-12rem]">
-        {" "}
-        <Image
-          layout="fill"
-          objectFit="cover"
-          className="z-[-3] brightness-50	 absolute mt-[64px]"
-          src={BackgroundPic}
-          alt="bg"
-        />
-        <div className="relative z-10 flex flex-col items-center max-w-full pr-4 pt-4">
+    <main className="w-full h-auto flex flex-col items-center text-slate-700">
+      <Navbar />
+      <header
+        className="w-full h-screen flex flex-col justify-center items-center text-center gap-3 mb-24 md:mb-20 first:border-t-1 first:border-slate-300"
+        id="main_background_image"
+      >
+        <div className="flex bg-slate-700 flex-col justify-center items-center text-white h-screen w-screen">
           <Image
-            src={WhiteLogo}
-            width={500}
-            height={500}
-            className="lg:w-[25rem] md:w-[20%]"
+            src={Logo}
             alt="Logo"
+            width={200}
+            height={200}
+            className="w-60 md:w-72 object-contain"
           />
-          <section className="w-full text-white flex flex-col justify-center items-center gap-3 my-4 mb-32">
-            <h1 className="text-4xl md:text-5xl font-roboto font-bold">
-              Young Engineers Mongolia
-            </h1>
-            <h3 className="w-full md:w-[90%] text-base md:text-lg text-balance text-center font-roboto">
+
+          <section className="w-auto flex flex-col justify-center items-center gap-3 ">
+            <h1 className="text-[40px]">Young Engineers Mongolia</h1>
+            <h3 className="w-[90%] text-base text-balance md:text-center">
               Young Engineers Mongolia нь 2024 онд байгуулагдсан. Ирээдүйн
               Монголын инженерүүдийг бэлтгэх зорилготой төрийн бус байгууллага
               юм
             </h3>
-            <button className="w-auto h-auto px-6 py-3 text-base bg-[#ff8d23] text-black mt-6 rounded-md hover:scale-105 transition-transform duration-300 font-semibold">
+            <button className="w-auto h-auto px-4 py-2 text-base bg-[#ff8d23] text-[#fff5ee] mt-4 rounded-md hover:scale-[1.05] duration-300">
               Илүү ихийг харах
             </button>
           </section>
         </div>
       </header>
       <article
-        id="article"
-        className="w-full max-w-6xl px-4 py-12 flex flex-col items-center justify-center gap-12"
+        id="display"
+        className="w-full h-auto flex flex-col items-center justify-center gap-8"
       >
-        {paragraphContexts.map((context, index) => (
-          <Paragraph
-            key={index}
-            number={context.number}
-            head={context.head}
-            para={context.para}
-            displayBtn={context.btnDisplay}
-            buttonURL={context.btnDisplay ? context.buttonURL : undefined}
-          />
-        ))}
+        {paragraphContexts.map((context) => {
+          return (
+            <Paragraph
+              number={context.number}
+              head={context.head}
+              para={context.para}
+              displayBtn={context.btnDisplay}
+            />
+          );
+        })}
       </article>
     </main>
   );
-}
+};
+
+export default LandingPage;

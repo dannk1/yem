@@ -5,13 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import YellowLogo from "/assets/logo-yellow transparent.png";
+import BlogsDropDownMenu from "./BlogsDropDownMenu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isBlogsOpen, setIsBlogsOpen] = useState(false);
-
-  const blogs = Array.from({ length: 9 }, (_, i) => `Blog${i + 1}`);
-
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleBlogs = () => setIsBlogsOpen(!isBlogsOpen);
 
@@ -28,7 +26,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <div className="pt-16">
+    <div className="">
       <nav className="fixed top-0 left-0 w-full bg-[#01093a] text-slate-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -37,10 +35,9 @@ export default function Navbar() {
                 <Image
                   src={YellowLogo}
                   alt="Logo"
-                  width={60}
-                  height={60}
-                  className="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] sm:w-[40px] sm:h-[40px]"
+                  className="w-[60px] h-auto md:w-[50px] sm:w-[40px] object-contain"
                 />
+
                 <h1 className="text-center font-bold text-[14px] lg:text-[18px]">
                   Young Engineers <br /> Mongolia
                 </h1>
@@ -50,13 +47,13 @@ export default function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   href="/"
-                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Home
                 </Link>
                 <Link
                   href="/Projects"
-                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Projects
                 </Link>
@@ -64,36 +61,23 @@ export default function Navbar() {
                   <button onClick={toggleBlogs}>
                     <Link
                       href="/Blogs"
-                      className="flex items-center hover:text-[#FEA13E] px-3 py-2 rounded-md text-sm font-medium"
+                      className="flex items-center hover:text-[#FEA13E] px-3 py-2 rounded-md text-[16px] font-medium"
                     >
                       Blogs
                       <ChevronDown className="h-4 w-4 ml-1" />
                     </Link>
                   </button>
-                  <div className="absolute left-0 bg-[#01093a] border border-[#FEA13E] mt-2 py-2 w-32 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <ul>
-                      {blogs.map((item, index) => (
-                        <li key={index}>
-                          <Link
-                            href={`/Blogs/${item}`}
-                            className="block px-4 py-2 text-white hover:bg-[#FEA13E] hover:text-[#01093a]"
-                          >
-                            {item}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <BlogsDropDownMenu></BlogsDropDownMenu>
                 </div>
                 <Link
-                  href="/Academy"
-                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-sm font-medium"
+                  href="/Program"
+                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"
                 >
-                  Academy
+                  Program
                 </Link>
                 <Link
                   href="/Charity"
-                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Charity
                 </Link>
@@ -116,26 +100,9 @@ export default function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="lg:hidden fixed inset-0 z-50 bg-[#01093a] overflow-y-auto">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <div className="flex justify-between items-center mb-4">
-                <Link
-                  href="/"
-                  className="flex items-center gap-1"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Image src={YellowLogo} alt="Logo" width={40} height={40} />
-                  <h1 className="text-center font-bold text-[14px]">
-                    Young Engineers <br /> Mongolia
-                  </h1>
-                </Link>
-                <button
-                  onClick={toggleMenu}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                >
-                  <X className="block h-6 w-6" />
-                </button>
-              </div>
+          <div className="lg:hidden inset-0 z-50 bg-[#01093a]">
+            <div className="px-4 pt-[3px] pb-3 space-y-1 sm:px-3">
+              <div className="flex justify-between items-center mb-4"></div>
               <Link
                 href="/"
                 className="hover:text-[#FEA13E] block px-3 py-3 rounded-md text-base font-medium"
@@ -158,11 +125,11 @@ export default function Navbar() {
                 Blogs
               </Link>
               <Link
-                href="/Academy"
+                href="/Program"
                 className="hover:text-[#FEA13E] block px-3 py-3 rounded-md text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Academy
+                Program
               </Link>
               <Link
                 href="/Charity"
