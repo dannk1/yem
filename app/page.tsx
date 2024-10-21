@@ -1,5 +1,5 @@
 import Paragraph from "@/components/paragraph";
-import Logo from "/assets/logo-yellow transparent.png";
+import Logo from "@/public/assets/logo-yellow transparent.png";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 const LandingPage = () => {

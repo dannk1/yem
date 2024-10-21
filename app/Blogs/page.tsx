@@ -1,69 +1,107 @@
-import Link from "next/link"; 
+import Link from "next/link";
+import { ArrowRight, BookOpen } from "lucide-react";
+import Image from "next/image";
+export default function BlogsMain() {
+  const engineeringFields = [
+    {
+      name: "Software Engineering",
+      href: "/Blogs/Software_Engineering",
+      color: "bg-rose-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Mechanical Engineering",
+      href: "/Blogs/Mechanical_Engineering",
+      color: "bg-cyan-300",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Nano Engineering",
+      href: "/Blogs/Nano_Engineering",
+      color: "bg-teal-300",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Environmental Engineering",
+      href: "/Blogs/Environmental_Engineering",
+      color: "bg-pink-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Electrical Engineering",
+      href: "/Blogs/Electrical_Engineering",
+      color: "bg-fuchsia-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Aerospace Engineering",
+      href: "/Blogs/Aerospace_Engineering",
+      color: "bg-blue-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Civil Engineering",
+      href: "/Blogs/Civil_Engineering",
+      color: "bg-sky-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Biomedical Engineering",
+      href: "/Blogs/Biomedical_Engineering",
+      color: "bg-emerald-400",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+    {
+      name: "Chemical Engineering",
+      href: "/Blogs/Chemical_Engineering",
+      color: "bg-rose-300",
+      imageUrl: "/assets/IMG_0382.jpg",
+    },
+  ];
 
-const BlogsMain = () => { 
-  return ( 
-    <article className="w-full flex flex-col items-center text-white gap-14 px-4 md:px-8 lg:px-12"> 
-      <section className="w-full pt-32 flex flex-col items-center gap-12"> 
-        <div className="w-[80%] flex flex-col justify-center"> 
-          <h3 className="text-[#ff8d23] text-2xl font-semibold"> 
+  return (
+    <article className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <section className="text-center mb-16">
+          <h3 className="text-orange-500 text-xl font-semibold mb-2">
             &quot;Young engineers Mongolia&quot;
-          </h3> 
-          <h1 className="text-4xl font-bold mt-5 mb-3 text-slate-700">9E for the Future</h1> 
-          <p className="text-md text-slate-700 leading-4"> 
-            Бид 9E-ээр буюу 9 инженерчлэлийн чиглэлийн хүрээнд залуучуудад чанартай бөгөөд уншихад хялбар блогуудыг бичиж оруулдаг. 7 хоног бүр тогтмол хуваарьтайгаар блогууд маань орж байгаа тул та бүхэн өдөр болгон вебсайтаа шалгаж байгаарай! 
-          </p> 
-        </div> 
+          </h3>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-800">
+            9E for the Future
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Бид 9E-ээр буюу 9 инженерчлэлийн чиглэлийн хүрээнд залуучуудад
+            чанартай бөгөөд уншихад хялбар блогуудыг бичиж оруулдаг. 7 хоног бүр
+            тогтмол хуваарьтайгаар блогууд маань орж байгаа тул та бүхэн өдөр
+            болгон вебсайтаа шалгаж байгаарай!
+          </p>
+        </section>
 
-        <div className="flex flex-row items-center justify-center flex-wrap gap-12"> 
-          <Link href="/Blogs/Software_Engineering" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-rose-400"> 
-              Software engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/Mechanical_Engineering" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-cyan-300"> 
-              Mechanical engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/Nano_Engineering" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-teal-300"> 
-              Nano engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-pink-400"> 
-              Engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-fuchsia-400"> 
-              Engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-blue-400"> 
-              Engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-sky-400"> 
-              Engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-emerald-400"> 
-              Engineering 
-            </div> 
-          </Link> 
-          <Link href="/Blogs/" className="w-full md:w-[30%] sm:w-[45%]"> 
-            <div className="w-full aspect-square flex justify-center items-center hover:scale-105 duration-300 hover:bg-opacity-90 rounded-md bg-rose-300"> 
-              Engineering 
-            </div> 
-          </Link> 
-        </div> 
-      </section> 
-    </article> 
-  ); 
-}; 
-
-export default BlogsMain;
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {engineeringFields.map((field) => (
+            <Link key={field.name} href={field.href} className="group">
+              <div
+                className={`${field.color} rounded-lg shadow-lg overflow-hidden transform transition duration-300 group-hover:scale-105 group-hover:shadow-xl relative`}
+              >
+                <Image
+                  src={field.imageUrl}
+                  alt="example"
+                  width={500}
+                  height={500}
+                  className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-300 "
+                ></Image>
+                <div className="p-6 flex flex-col items-center justify-center h-full min-h-[200px] relative z-10">
+                  <BookOpen className="w-12 h-12 mb-4 text-white opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+                  <h2 className="text-xl font-semibold text-white text-center group-hover:underline">
+                    {field.name}
+                  </h2>
+                  <ArrowRight className="w-6 h-6 mt-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-2" />
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </article>
+  );
+}

@@ -1,11 +1,11 @@
-import React from 'react'
-import { MdEmail, MdPhone } from "react-icons/md"
+import React from "react";
+import { MdEmail, MdPhone } from "react-icons/md";
 
 export default function Contact() {
   return (
     <div className="flex flex-col gap-2">
       <h5 className="text-saaral font-semibold text-base mb-5">CONTACT</h5>
-      <div className='flex gap-3 items-center'>
+      <div className="flex gap-3 items-center">
         <a
           href="tel:+97694669168"
           target="_blank"
@@ -14,9 +14,9 @@ export default function Contact() {
         >
           <MdPhone size={24} />
         </a>
-        <p className='text-saaral text-md'>+976 9466 9168</p>
+        <p className="text-saaral text-md">+976 9466 9168</p>
       </div>
-      <div className='flex gap-3 items-center'>
+      <div className="flex gap-3 items-center">
         <a
           href="mailto:example@example.com"
           target="_blank"
@@ -26,8 +26,8 @@ export default function Contact() {
         >
           <MdEmail size={24} />
         </a>
-        <p className='text-saaral text-md'>example@example.com</p>
+        <p className="text-saaral text-md">youngengineersmgl.org@gmail.com</p>
       </div>
     </div>
-  )
+  );
 }

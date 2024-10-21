@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu, X } from "lucide-react";
-import YellowLogo from "/assets/logo-yellow transparent.png";
-import BlogsDropDownMenu from "./BlogsDropDownMenu";
+import { Menu, X } from "lucide-react";
+import YellowLogo from "@/public/assets/logo-yellow transparent.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,10 +63,10 @@ export default function Navbar() {
                       className="flex items-center hover:text-[#FEA13E] px-3 py-2 rounded-md text-[16px] font-medium"
                     >
                       Blogs
-                      <ChevronDown className="h-4 w-4 ml-1" />
+                      {/* <ChevronDown className="h-4 w-4 ml-1" /> */}
                     </Link>
                   </button>
-                  <BlogsDropDownMenu></BlogsDropDownMenu>
+                  {/* <BlogsDropDownMenu></BlogsDropDownMenu> */}
                 </div>
                 <Link
                   href="/Program"

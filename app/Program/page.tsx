@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Photo from "../../assets/IMG_7818.jpg";
+import Photo from "@/public/assets/IMG_7818.jpg";
 const Academy = () => {
   return (
     <section className="w-full flex flex-col gap-9 items-center justify-center text-white">
