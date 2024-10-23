@@ -1,19 +1,19 @@
 {
-    "title": "Biomedical Engineering",
+    "title": "Mechanical Engineering",
     "description": "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"",
     "contents":
     [
     {  "id": 1,
-      "imageSrc": "https://picsum.photos/200/200?random=1",
+      "imageSrc": "/assets/IMG_0382.jpg",
       "topic": "MUSIC",
       "title": "Coffee sugar, chicory seasonal espresso barista americano",
       "date": "2016-03-17",
       "description": "Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings.",
-      "blog": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum, dui nec accumsan molestie, sapien risus pretium orci, at dapibus felis elit quis enim. Cras iaculis consequat eros, vel varius lacus tincidunt a. Nunc eu pulvinar est. Maecenas accumsan in elit at convallis. Integer id purus nulla. Nulla commodo nisi ac velit tempus porta. Suspendisse potenti. Maecenas sollicitudin feugiat felis quis scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce placerat risus eget congue blandit. Phasellus hendrerit sit amet libero feugiat blandit. Nulla eu nisl eu neque tempor volutpat.\n\nFusce lacinia augue mattis luctus facilisis. Curabitur eleifend erat sed vulputate egestas. In faucibus enim vel neque dignissim facilisis. Quisque nec tempus ante, ac aliquet nibh. Maecenas sit amet felis a ex pharetra dapibus. Vivamus libero justo, elementum nec eros sit amet, consequat fringilla nisl. Nulla ex magna, imperdiet vitae quam at, sodales gravida nisi. In eget orci vel ligula molestie interdum a sit amet eros. Etiam bibendum massa vel libero posuere elementum.\n\nProin at nisl malesuada, volutpat ipsum nec, auctor neque. Integer tristique mi vitae diam ullamcorper, sit amet posuere ante tempus. Sed dapibus mi vel urna vulputate, nec auctor leo consequat. In ac aliquet felis. Vivamus ornare libero non sapien blandit, eu lobortis ex commodo. Curabitur et nulla eget leo ultricies luctus. Aenean ornare nunc at dui tincidunt, a interdum ipsum pellentesque. Pellentesque nec lectus erat. Praesent scelerisque vitae mauris id blandit. Suspendisse bibendum euismod justo, suscipit efficitur erat lacinia ac. Quisque venenatis eros non dapibus scelerisque. Duis vel neque vitae nunc volutpat porttitor. Praesent commodo pharetra purus sit amet rutrum. Maecenas sed est congue, sollicitudin massa sed, consectetur augue.\n\nNulla id eros odio. Nunc pretium consectetur blandit. Donec et pharetra eros. Vestibulum in venenatis mauris, a facilisis lorem. Donec at dui lobortis, eleifend nibh sed, lacinia lectus. Praesent rhoncus, odio nec suscipit molestie, tellus enim volutpat eros, at congue lorem purus a dui. Sed lacus lacus, vestibulum ut nisl sed, tincidunt vehicula ligula. Etiam bibendum egestas ultricies. Sed nisl tellus, convallis vitae mattis ut, viverra in nisi. Ut eget ligula sed nulla porttitor aliquam. Integer vel elit interdum, elementum justo id, laoreet metus. Sed pulvinar fringilla facilisis. Maecenas in nulla urna. Nunc et facilisis sem.\n\nDonec est diam, gravida vitae rutrum eget, laoreet faucibus velit. Nullam porttitor malesuada imperdiet. Integer molestie eros sed tellus ultrices dapibus eget ac magna. Etiam nec commodo erat. Cras vel arcu velit. Phasellus feugiat lacus ut erat lacinia varius. Nam interdum volutpat risus et viverra. In aliquam metus a est sodales convallis."
+      "blog": "<h1>Title</h1>\n\n<p>main paragraph</p>\n\n<ul>\n    <li>item 1</li>\n    <li>item 2</li>\n    <li>item 3</li>\n</ul>\n<b>bold text</b>"
     },
     {
         "id": 2,
-      "imageSrc": "https://picsum.photos/200/200?random=2",
+      "imageSrc": "https://picsum.photos/200/200?random=2", 
       "topic": "TECH",
       "title": "Overlaid the jeepers uselessly much excluding",
       "date": "2016-03-17",

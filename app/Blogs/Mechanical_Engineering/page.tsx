@@ -1,7 +1,7 @@
 import React from "react";
 import BlogCard from "@/components/BlogCard";
 import { Card } from "@/components/ui/card";
-import Aerospace from "@/BlogContents/Aerospace.json"
+import Aerospace from "@/BlogContents/Mechanical.json"
 const Page = () => {
   return (
     <div className="mt-20 mx-auto max-w-4xl font-roboto">

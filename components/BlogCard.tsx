@@ -85,7 +85,7 @@ const BlogCard = ({
             </CardHeader>
             <CardContent className="p-0">
               <p className="text-sm text-muted-foreground">{description}</p>
-              <p className="text-sm text-primary hover:underline mt-2 inline-block">
+              <p className="text-sm text-primary mt-2 inline-block">
                 Read more...
               </p>
             </CardContent>
