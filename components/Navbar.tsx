@@ -38,7 +38,7 @@ export default function Navbar() {
                 />
 
                 <h1 className="text-center font-bold text-[14px] lg:text-[18px]">
-                  Young Engineers <br /> Mongolia
+                  Young Engineers  Mongolia
                 </h1>
               </Link>
             </div>
@@ -68,12 +68,12 @@ export default function Navbar() {
                   </button>
                   {/* <BlogsDropDownMenu></BlogsDropDownMenu> */}
                 </div>
-                <Link
+                {/* <Link
                   href="/Program"
                   className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"
                 >
                   Program
-                </Link>
+                </Link> */}
                 <Link
                   href="/Charity"
                   className="hover:text-[#FEA13E] px-3 py-2 rounded-md text-md font-medium"

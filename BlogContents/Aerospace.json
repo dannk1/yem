@@ -5,10 +5,10 @@
     [
     {  "id": 1,
       "imageSrc": "/assets/IMG_0382.jpg",
-      "topic": "MUSIC",
-      "title": "Coffee sugar, chicory seasonal espresso barista americano",
-      "date": "2016-03-17",
-      "description": "Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings.",
+      "topic": "Bat-Amgalan Erdenechimeg",
+      "title": "Нисэхийн/сансрын инженерчлэлийн хөтөлбөрүүд",
+      "date": "2024-08-24",
+      "description": "Сансрын инженерчлэлийн чиглэлээр мэргэжил эзэмших хүсэлтэй сурагчдад мэдлэг олгох зориулалттай олон улсын хөтөлбөрүүд олон байдаг. Хэрэв та сансрын инженерчлэлийн мэргэжилд сонирхолтой бол энэхүү хөтөлбөрүүдийг сонирхоод үзээрэй гэж зөвлөе.",
       "blog": "<h1>Title</h1>\n\n<p>main paragraph</p>\n\n<ul>\n    <li>item 1</li>\n    <li>item 2</li>\n    <li>item 3</li>\n</ul>\n<b>bold text</b>"
     },
     {
