@@ -10,7 +10,7 @@ import { useRouter, usePathname } from "next/navigation";
 //   contents: {
 //     id: number;
 //     imageSrc: string;
-//     topic: string;
+//     author: string;
 //     title: string;
 //     date: string;
 //     description: string;
@@ -18,8 +18,8 @@ import { useRouter, usePathname } from "next/navigation";
 // }
 interface BlogPreviewProp {
   id: number;
-  imageSrc: string;
-  topic: string;
+  imageSrc?: string;
+  author: string;
   title: string;
   date: string;
   description: string;
@@ -44,7 +44,7 @@ interface BlogPreviewProp {
 const BlogCard = ({
   id,
   imageSrc,
-  topic,
+  author,
   title,
   date,
   description,
@@ -61,13 +61,15 @@ const BlogCard = ({
       <Card className="max-w-4xl mx-auto overflow-hidden mt-4 mb-8 hover:shadow-lg transition-shadow duration-300">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/3 p-5">
-            <Image
+                {             
+              imageSrc &&
+              <Image
               src={imageSrc}
               width={300}
               height={200}
               alt={title}
               className="object-cover w-full h-full"
-            />
+            />}
           </div>
           <div className="w-full md:w-2/3 p-6">
             <CardHeader className="p-0">
@@ -80,7 +82,7 @@ const BlogCard = ({
                     day: "numeric",
                   })}
                 </time>{" "}
-                | {topic}
+                | {author}
               </p>
             </CardHeader>
             <CardContent className="p-0">

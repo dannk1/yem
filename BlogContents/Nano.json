@@ -5,7 +5,7 @@
     [
     {  "id": 1,
       "imageSrc": "/assets/IMG_0382.jpg",
-      "topic": "MUSIC",
+      "author": "MUSIC",
       "title": "Coffee sugar, chicory seasonal espresso barista americano",
       "date": "2016-03-17",
       "description": "Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings.",
@@ -14,7 +14,7 @@
     {
         "id": 2,
       "imageSrc": "https://picsum.photos/200/200?random=2", 
-      "topic": "TECH",
+      "author": "TECH",
       "title": "Overlaid the jeepers uselessly much excluding",
       "date": "2016-03-17",
       "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -23,7 +23,7 @@
     {
         "id": 3,
       "imageSrc": "https://picsum.photos/200/200?random=3",
-      "topic": "MUSIC",
+      "author": "MUSIC",
       "title": "According a funnily until pre-set or arrogant well cheerful",
       "date": "2016-03-17",
       "description": "Single shot cultivar beans as chicory caffeine. Medium brewed, milk extra that froth pumpkin spice mocha. Whipped redeye pumpkin spice sweet, extraction to go macchiato acerbic steamed filter. Robusta grounds decaffeinated.",
