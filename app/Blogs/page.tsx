@@ -7,7 +7,7 @@ export default function BlogsMain() {
       name: "Software Engineering",
       href: "/Blogs/Software_Engineering",
       color: "bg-rose-400",
-      imageUrl: "/assets/blogs9E/blogsSoftware.png",
+      imageUrl: "/assets/blogs9E/BlogsSoftware.png",
     },
     {
       name: "Mechanical Engineering",
@@ -19,7 +19,7 @@ export default function BlogsMain() {
       name: "Nano Engineering",
       href: "/Blogs/Nano_Engineering",
       color: "bg-teal-300",
-      imageUrl: "/assets/blogs9E/blogsNano.png",
+      imageUrl: "/assets/blogs9E/BlogsNano.png",
     },
     {
       name: "Environmental Engineering",
@@ -49,7 +49,7 @@ export default function BlogsMain() {
       name: "Biomedical Engineering",
       href: "/Blogs/Biomedical_Engineering",
       color: "bg-emerald-400",
-      imageUrl: "/assets/blogs9E/blogsBiomedical.png",
+      imageUrl: "/assets/blogs9E/BlogsBiomedical.png",
     },
     {
       name: "Chemical Engineering",
