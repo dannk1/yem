@@ -41,7 +41,7 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
             {head}
           </h3>
         </div>
-        <p className="md:ml-4">{para}</p>
+        <div className="md:ml-4" dangerouslySetInnerHTML={{ __html: para}}/>
         <DisplayLink />
       </section>
       <Image

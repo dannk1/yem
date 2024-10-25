@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { CalendarIcon, TagIcon } from "lucide-react";
-import blogData from "@/BlogContents/Aerospace.json";
+import blogData from "@/BlogContents/Biomedical.json";
 
 type BlogPost = {
   id: number;
@@ -70,7 +70,7 @@ export default function BlogPost({ params }: Props) {
             </time>
             <span className="mx-2">•</span>
             <TagIcon className="w-5 h-5 mr-2" />
-            <span>{post.topic}</span>
+
           </div>
           <div className="relative w-full h-96 mb-8">
           {   
@@ -92,10 +92,11 @@ export default function BlogPost({ params }: Props) {
         />
         <footer className="mt-12 text-saaral pt-6 border-t border-gray-200">
           <div className="flex items-center justify-between">
-            <p className="text-saaral flex items-center">
+            { post.author &&
+              <p className="text-saaral flex items-center">
               <TagIcon className="w-5 h-5 mr-2 text-orange-500" />
-              Topic: {post.topic}
-            </p>
+              Author: {post.author}
+            </p>}
             <div className="flex space-x-4">
               <button className="text-navy-600 hover:text-navy-800 transition duration-300">
                 Share
