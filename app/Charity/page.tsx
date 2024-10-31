@@ -3,7 +3,7 @@ import { Heart } from "lucide-react";
 
 export default function Charity() {
   const donationGoal = 1000000;
-  const collectedAmount = 500000;
+  const collectedAmount = 0;
 
   const donationProgress = (collectedAmount / donationGoal) * 100;
 
