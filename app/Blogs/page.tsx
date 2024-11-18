@@ -64,7 +64,7 @@ export default function BlogsMain() {
       <div className="max-w-7xl mx-auto">
         <section className="text-center mb-16">
           <h3 className="text-orange-500 text-xl font-semibold mb-2">
-            &quot;Young engineers Mongolia&quot;
+            &quot;Young Engineers Mongolia&quot;
           </h3>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-800">
             9E for the Future
